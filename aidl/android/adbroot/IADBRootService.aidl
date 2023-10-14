@@ -17,7 +17,10 @@ package android.adbroot;
 
 /** {@hide} */
 interface IADBRootService {
+    @PermissionManuallyEnforced
     boolean isSupported();
+    @PermissionManuallyEnforced
     void setEnabled(boolean enabled);
+    @PermissionManuallyEnforced
     boolean getEnabled();
 }
